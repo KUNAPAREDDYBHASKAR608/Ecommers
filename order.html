@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background-color: #f2f2f2;
+    }
+    .order-form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+    .order-form h2 {
+      margin-bottom: 20px;
+    }
+    .order-form input,
+    .order-form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .order-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .confirmation {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="order-form" onsubmit="submitOrder(event)">
+    <h2>Complete Your Order</h2>
+    <input type="text" placeholder="Your Name" id="name" required />
+    <input type="email" placeholder="Your Email" id="email" required />
+
+    <label for="payment">Select Payment Method:</label>
+    <select id="payment" required>
+      <option value="">--Choose--</option>
+      <option value="PhonePe">PhonePe</option>
+      <option value="Google Pay">Google Pay</option>
+      <option value="Credit Card">Credit Card</option>
+    </select>
+
+    <button type="submit">Submit Order</button>
+    <div class="confirmation" id="confirmationMsg">🎉 Product Ordered. Thank you!</div>
+  </form>
+
+  <script>
+    function submitOrder(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const payment = document.getElementById("payment").value;
+
+      if (name && email && payment) {
+        document.getElementById("confirmationMsg").style.display = "block";
+      } else {
+        alert("Please fill in all fields.");
+      }
+    }
+  </script>
+
+</body>
+</html>

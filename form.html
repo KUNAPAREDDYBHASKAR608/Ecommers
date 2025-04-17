@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login + Nike Store</title>
+ <link rel="stylesheet" href="ecommerscss.css">
+</head>
+<body>
+
+  <!-- LOGIN SECTION -->
+  <div id="loginSection">
+    <div class="left">
+      <form class="login-form" onsubmit="login(event)">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <div class="register-link">
+          <a href="register.html" target="_blank">New user? Register here</a>
+        </div>
+      </form>
+    </div>
+    <div class="right"></div>
+  </div>
+
+  <!-- ECOMMERCE SECTION -->
+  <div id="storeSection">
+    <nav>
+      <div class="navTop">
+        <div class="navItem">
+          <h1 style="color: aliceblue;">.Sneakers</h1>
+        </div>
+        <div class="navItem">
+          <div class="search">
+            <input type="text" placeholder="search" class="searchInput">
+            <img src="./img/SEARCH.png" width="20" height="20" alt="" class="searchIcon">
+          </div>
+        </div>
+        <div class="navItem">
+          <span class="limitedOffer">Limited offer!</span>
+        </div>
+      </div>
+
+      <div class="navBottom">
+        <h4 class="SliderItem" > AIR FORCE</h4>
+        <h4 class="SliderItem"  >JORDEN</h4>
+        <h4 class="SliderItem" >BLAZER</h4>
+        <h4 class="SliderItem"  >CRATER</h4>
+        <h4 class="SliderItem" >HIPPIE</h4>
+        
+      </div>
+    </nav>
+
+    <div class="slider">
+      <div class="sliderWrapper">
+        <!-- slider items go here as in your code -->
+        <div class="sliderItem" id="airforce">
+          <img src="./img/NIKE-removebg-preview.png" alt="" class="sliderImage">
+          <div class="slideBg" style="background-color: aqua; height: 450px; width: 500px;"></div>
+          <h1 class="sliderTitle">AIR FORCE <br> NEW <br> SEASON </h1>
+          <h2 class="sliderPrice">$119</h2>
+          <a href="order.html" target="_blank">
+            <button class="buyButton">BUY NOW!</button>
+          </a>
+        </div>
+
+        <div class="sliderItem" id="jorden" >
+          <img src="./img/PUMA-removebg-preview (1).png" alt="" class="sliderImage">
+            <div class="slideBg" style="background-color: aqua; height: 450px; width: 500px;" ></div>
+             <h1 class="sliderTitle">JORDEN <br> NEW <br> SEASON </h1>
+             <h2 class="sliderPrice"> $119</h2>
+             <a href="order.html" target="_blank">
+              <button class="buyButton">BUY NOW!</button>
+            </a>
+                            </div>
+
+                            <div class="sliderItem" id="blazer">
+                              <img src="./img/PUMA-removebg-preview.png" alt="" class="sliderImage">
+                           <div class="slideBg"  style="background-color: aqua; height: 450px; width: 500px;"></div>
+                          <h1 class="sliderTitle">BLAZER<br> NEW <br> SEASON </h1>
+                            <h2 class="sliderPrice"> $129</h2>
+                            <a href="order.html" target="_blank">
+                              <button class="buyButton">BUY NOW!</button>
+                            </a>
+                            </div>
+
+                            <div class="sliderItem" id="crater">
+                              <img src="./img/SPARX-removebg-preview.png" alt="" class="sliderImage">
+                               <div class="slideBg"  style="background-color: aqua; height: 450px; width: 500px;"></div>
+                              <h1 class="sliderTitle">CREATER <br> NEW <br> SEASON </h1>
+                              <h2 class="sliderPrice"> $138</h2>
+                              <a href="order.html" target="_blank">
+                                <button class="buyButton">BUY NOW!</button>
+                              </a>>
+                               </div>
+                              <div class="sliderItem" id="hippie">
+                                <img src="img/SHOE-removebg-preview.png" alt="" class="sliderImage">
+                                <div class="slideBg"style="background-color: aqua; height: 450px; width: 500px;" ></div>
+                                <h1 class="sliderTitle">HIPPIE<br> NEW <br> SEASON </h1>
+                                <h2 class="sliderPrice"> $167</h2>
+                                <a href="order.html" target="_blank">
+                                  <button class="buyButton">BUY NOW!</button>
+                                </a>
+                              </div>
+
+        <!-- Repeat for other items -->
+      </div>
+    </div>
+
+    <section id="contact" class="info">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:kunapareddybhaskar447@gmail.com">kunapareddybhaskar447@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/bhaskar-kunapareddy-2a185129b" target="_blank">bhaskar-kunapareddy</a></p>
+      <p>WhatsApp: <a href="https://wa.me/919347624434" target="_blank">+91 93476 24434</a></p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Bhaskar Kunapareddy. All rights reserved.</p>
+      <p>Contact: <a href="mailto:kunapareddybhaskar447@gmail.com">kunapareddybhaskar447@gmail.com</a> | 
+        <a href="https://www.linkedin.com/in/bhaskar-kunapareddy-2a185129b" target="_blank">LinkedIn</a> | 
+        <a href="https://wa.me/919347624434" target="_blank">WhatsApp</a></p>
+    </footer>
+  </div>
+
+ 
+
+ 
+  <script src="ecommers.js"></script>
+  
+
+ 
+
+</body>
+</html>
+

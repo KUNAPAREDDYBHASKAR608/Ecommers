@@ -1,0 +1,188 @@
+/* ------- Common Styles ------- */
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* ------- LOGIN STYLES ------- */
+  #loginSection {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    background-color: white;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right {
+    background-color: red;
+    width: 20%;
+  }
+
+  .login-form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: black;
+  }
+
+  .login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  .login-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+  .register-link {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* ------- ECOMMERCE STYLES ------- */
+  #storeSection {
+    display: none; /* Hide store section initially */
+  }
+
+  nav {
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+  }
+
+  .navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .searchInput {
+    border: none;
+    background-color: transparent;
+  }
+
+  .searchInput::placeholder {
+    color: lightgray;
+  }
+
+  .limitedOffer {
+    font: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+  }
+
+  .SliderItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+  }
+
+  .navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .slider {
+    background: url("https://plus.unsplash.com/premium_photo-1723867219819-c3c85d398efd?q=80&w=881&auto=format&fit=crop");
+  }
+
+  .sliderItem {
+    height: 35vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: center;
+    position: relative;
+  }
+
+  .sliderWrapper {
+    width: 100vw;
+  }
+
+  .sliderTitle, .sliderPrice {
+    position: absolute;
+    top: 10%;
+    font-size: 60px;
+    z-index: 1;
+  }
+
+  .sliderTitle {
+    right: 10%;
+    color: white;
+    font-weight: 900;
+  }
+
+  .sliderPrice {
+    left: 10%;
+    color: white;
+    font-weight: 400;
+    border: 1px solid gray;
+  }
+
+  .slideBg {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .sliderImage {
+    z-index: 1;
+  }
+
+  .buyButton {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1;
+  }
+
+  .buyButton:hover {
+    background-color: white;
+    color: black;
+  }
+  .active{
+    display:block;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgb(50, 48, 51);
+    color: white;
+  }
